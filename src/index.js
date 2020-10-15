@@ -15,8 +15,9 @@ const SizeofBoard = 5;
 
 if (document.readyState !== "loading") {
   initializeCode();
+  //
 } else {
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     initializeCode();
   });
 }
@@ -39,7 +40,7 @@ function makeArray() {
 function addListener(element) {
   const button = element;
   console.log("button done");
-  button.addEventListener("mousedown", event => {
+  button.addEventListener("mousedown", (event) => {
     buttonActivites(element.id);
     event.stopPropagation();
   });
@@ -100,7 +101,7 @@ function clearButton() {
   let button = document.createElement("button");
   button.textContent = "clear board";
   button.setAttribute("id", "clearButton");
-  button.addEventListener("mousedown", event => {
+  button.addEventListener("mousedown", (event) => {
     clearBoard();
     event.stopPropagation();
   });
@@ -120,7 +121,7 @@ function ChangePlayerButton() {
   let button = document.createElement("button");
   button.textContent = "changeplayer";
   button.setAttribute("id", "CP");
-  button.addEventListener("mousedown", event => {
+  button.addEventListener("mousedown", (event) => {
     changeplayer();
     event.stopPropagation();
   });
