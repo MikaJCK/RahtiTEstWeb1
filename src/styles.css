@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+table,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  border-spacing: 15px;
+}
+th {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(150, 150, 150);
+  box-shadow: 3px 3px 1px #888888;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px;
+}
